@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Assignment2.css">
+</head>
+<body>
+    <header class="container1">
+        <div class="overlay"></div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo" class="nike-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="shop-btn">Shop Now</button>
+        </nav>
+
+        <main class="cart-page">
+            <div class="cart-container">
+                <h1>Your Shopping Cart</h1>
+                
+                <div class="cart-grid">
+                    <div class="cart-items" id="cartItems">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping</span>
+                            <span id="shipping">$0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Tax</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                        <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout</button>
+                        
+                        <div class="promo-code">
+                            <input type="text" placeholder="Enter promo code">
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="hero-content">
+            <h1>Elevate Your Game</h1>
+            <p>Explore the latest in footwear and apparel.</p>
+            <button class="explore-btn">Explore Now</button>
+        </div>
+    </header>
+
+    <section id="products" class="products-section">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nike Air Max 2024">
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="product-tag">New Release</div>
+                <h3>Nike Air Max 2024</h3>
+                <p class="product-description">Premium cushioning meets street style with the latest Air technology</p>
+                <p class="price">$189.99</p>
+                <div class="color-options">
+                    <span class="color-dot" style="background: #FF4D4D"></span>
+                    <span class="color-dot" style="background: #000000"></span>
+                    <span class="color-dot" style="background: #4D79FF"></span>
+                </div>
+                <button class="product-btn" data-product-id="1" data-product-name="Air Max 2024" data-product-price="120">Buy Now</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nike ZoomX Vaporfly">
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="product-tag">Bestseller</div>
+                <h3>Nike ZoomX Vaporfly</h3>
+                <p class="product-description">Elite racing shoe engineered for record-breaking performance</p>
+                <p class="price">$249.99</p>
+                <div class="color-options">
+                    <span class="color-dot" style="background: #00FF00"></span>
+                    <span class="color-dot" style="background: #FF00FF"></span>
+                    <span class="color-dot" style="background: #FFFF00"></span>
+                </div>
+                <button class="product-btn" data-product-id="1" data-product-name="Air Max 2024" data-product-price="120">Buy Now</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nike Metcon 8">
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="product-tag">Limited Edition</div>
+                <h3>Nike Metcon 8</h3>
+                <p class="product-description">Ultimate training shoe designed for maximum stability</p>
+                <p class="price">$129.99</p>
+                <div class="color-options">
+                    <span class="color-dot" style="background: #808080"></span>
+                    <span class="color-dot" style="background: #800000"></span>
+                    <span class="color-dot" style="background: #000080"></span>
+                </div>
+                <button class="product-btn" data-product-id="1" data-product-name="Air Max 2024" data-product-price="120">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Nike</h2>
+                <p class="about-text">Nike, Inc. is the world's leading designer, marketer, and distributor of authentic athletic footwear, apparel, and equipment. From humble beginnings as Blue Ribbon Sports to becoming a global leader in sports innovation, our journey has been driven by a simple mission: to bring inspiration and innovation to every athlete* in the world.</p>
+                <p class="about-footnote">*If you have a body, you are an athlete. - Bill Bowerman</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Years of Innovation</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">170+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1B+</span>
+                        <span class="stat-label">Athletes Served</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-images">
+                <div class="image-grid">
+                    <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nike Store" class="about-img img1">
+                    <img src="https://images.pexels.com/photos/4462781/pexels-photo-4462781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Athlete Training" class="about-img img2">
+                    <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nike Shoes" class="about-img img3">
+                    <img src="https://images.pexels.com/photos/12725055/pexels-photo-12725055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sport Performance" class="about-img img4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Get In Touch</h2>
+                <p class="footer-description">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h2>Connect With Us</h2>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100008167517486&mibextid=ZbWKwL" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/promish_subedi/profilecard/?igsh=ZXB5a2UyeGJqcGtz" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:promishsubedi05@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>promishsubedi05@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 Nike, Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!--Javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+<script src="script.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>
+
+
